@@ -107,9 +107,15 @@
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script>$(window).on('load',function(){ 
 var output = $("#output");
+<<<<<<< HEAD
 var ids = {{Ids}}
 
 for(i=0; i<{{Ids.length}}; i++){
+=======
+var ids = ['783216901400821760'];
+
+for(i=0; i<ids.length; i++){
+>>>>>>> 5750e913ead60fa6068e2926dfe2b0fcf35a967f
    $.ajax({
  url: "https://api.twitter.com/1/statuses/oembed.json?id=" + ids[i] + "&align=center&callback=?",
  dataType: 'json',
