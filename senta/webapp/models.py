@@ -11,10 +11,10 @@ class Tweets(models.Model):
 
 
 class HashTags(models.Model):
-	tweet_id = models.ForeignKey(Tweets.tweet_id,on_delete=models.CASCADE)
+	tweet_id = models.ForeignKey(Tweets,on_delete=models.CASCADE)
 	hash_tag = models.CharField(max_length=100,default="0")
 
 
 class Mentions(models.Model):
-	tweet_id = models.ForeignKey(Tweets.tweet_id,on_delete=models.CASCADE)
+	tweet_id = models.ForeignKey(Tweets,on_delete=models.CASCADE)
 	mention = models.CharField(max_length=100,default="0")
