@@ -1,8 +1,8 @@
 # Sentiment-Analysis
 Smart India Hackathon
 
-https://www.python.org/downloads/
-<
+< https://www.python.org/downloads/
+< http://www.chartjs.org/docs/latest/
 # Install Dependencies :
 
 ### pip install tweepy
