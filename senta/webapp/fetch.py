@@ -20,7 +20,7 @@ def fetch_tweets():
          'time': tweet.user.created_at,
          'verfied':tweet.user.verified,
          'id': tweet.id,
-         'hashtag': tweet.entitities['hashtags'],
+         'hashtag': tweet.entities['hashtags'],
          'people:':tweet.entities['user_mentions'],
          'sentiment':TextBlob(tweet.text).sentiment.polarity,
             }
