@@ -93,26 +93,26 @@
           
         </header>
         <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Inbox</a>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Trash</a>
+          <a class="mdl-navigation__link" href="">Dashboard</a>
+          <a class="mdl-navigation__link" href="">Insights</a>
+          <a class="mdl-navigation__link" href="">Departments</a>
           
-          <div class="mdl-layout-spacer"></div>
-          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
+          
         </nav>
       </div>
-<main class="mdl-layout__content mdl-color--red-300">
-    <div class="mdl-grid">
+<main class="mdl-layout__content mdl-color--green-300">
+    <div class="mdl-grid" >
       {% url 'positive' as the_url%}
       {% url 'negative' as the_url1 %}
-  <button class="mdl-button mdl-cell--6-col mdl-color--green-300" onclick="window.location.href='{{the_url}}'" style="text-decoration: none;color:white;">positive</button>   
+ <button class="mdl-button mdl-cell--6-col mdl-color--green-300" onclick="window.location.href='{{the_url}}'" style="text-decoration: none;color:white;">positive</button>   
 <button class="mdl-button mdl-cell--6-col mdl-color--red-300 " onclick="window.location.href='{{ the_url1 }}'" style="text-decoration: none;color:white;">negative</button>
  </div>
-<div class="mdl-grid">
-  {% for id in Ids %}
-          <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--6-col ">
+<div class="mdl-grid center-items">
+          
+ {% for id in Ids %}
+ <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--6-col  " style="align-content: center;">
             <blockquote class="twitter-tweet" data-lang="en">
-  <p lang="en" dir="ltr">just setting up my twttr</p>&mdash; Twitter-Post (@twittr)  <a href="https://twitter.com/Interior/status/{{id}}">March 21, 2006</a>
+  <p lang="en" dir="ltr">just setting up my twttr</p>&mdash; Twitter-Post (@twittr) <a href="https://twitter.com/Interior/status/{{id}}">March 21, 2006</a>
 </blockquote>
 
 </div>
