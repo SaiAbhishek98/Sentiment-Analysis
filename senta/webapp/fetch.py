@@ -15,8 +15,10 @@ def fetch_tweets():
     tweets = api.search(q='Telangana',count = '100')
     fetched_tweets = []
     for tweet in tweets:
-        fetched_tweets.append(tweet.text + ',' + str(TextBlob(tweet.text).sentiment.polarity) + '<br>') 
-        print(tweet.text)
+        fetched_tweets.append(tweet.text.encode('utf-8'))
+        fetched_tweets.append(TextBlob(tweet.text).sentiment.polarity) 
+        fetched_tweets.append('<br>')
+        print(tweet.text.encode('utf-8'))
         print(TextBlob(tweet.text).sentiment.polarity)
 
     return fetched_tweets
