@@ -2,7 +2,7 @@
 Smart India Hackathon
 
 https://www.python.org/downloads/
-<-
+<
 # Install Dependencies :
 
 ### pip install tweepy
